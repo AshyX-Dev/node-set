@@ -8,5 +8,4 @@ export interface Creation {
 
 export interface events {
     new: (incomingCreation: Creation) => void
-    all: (allOfUs: Creation[]) => void
 };
