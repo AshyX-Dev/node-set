@@ -65,13 +65,10 @@ var Set = /** @class */ (function (_super) {
             this.emit("new", productInfo);
         }
     };
+    Set.prototype.getAll = function () {
+        return this.many;
+    };
     return Set;
 }(events_1.EventEmitter));
 exports.Set = Set;
-var set = new Set();
-set.on("new", function (ic) {
-    console.log(ic);
-});
-for (var i = 0; i < 5; i++) {
-    set.shove("alie");
-}
+module.exports = { Set: Set };

@@ -42,6 +42,10 @@ export class Set extends EventEmitter {
         }
     }
 
+    getAll(){
+        return this.many;
+    }
+
 }
 
 module.exports = { Set };
